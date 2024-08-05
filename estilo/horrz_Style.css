@@ -111,6 +111,7 @@ body, html {
 
 .tabela-nutricional tbody tr{
    border: none;
+   white-space: nowrap;
    
 }
 
@@ -123,6 +124,7 @@ body, html {
     border: 1px solid black;
     border-top: none;
     border-right: none;
+    white-space: nowrap;
     
    
 }

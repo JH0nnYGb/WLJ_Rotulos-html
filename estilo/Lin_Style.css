@@ -1,4 +1,4 @@
-/*STYLE DA TABELA VERTICAL */
+/*STYLE DA TABELA LINEAR */
 /*##################################################################################*/
 body, html {
     margin: 0;
@@ -54,7 +54,7 @@ body, html {
     /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
     border : 4px solid;
     width: 100%;
-    max-width: 600px;
+    /* max-width: 600px;*/
     margin-top: 12px;
 }
 
@@ -71,6 +71,9 @@ body, html {
 
 .tabela-nutricional table {
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas */
+    grid-auto-rows: 1fr; /* Cada linha terá o mesmo tamanho */
 } 
 
 .tabela-nutricional table th tr{
@@ -86,15 +89,22 @@ body, html {
 .tabela-nutricional tbody{
     border: 1px solid black;
     border-collapse: collapse;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas */
+    grid-auto-rows: 1fr; /* Cada linha terá o mesmo tamanho */
 }
 
 .tabela-nutricional tbody tr{
     border:2px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 280px;
 }
 
 .tabela-nutricional tbody td {
-    padding: 10px;
+
     border-bottom: 1px solid #ddd;
+    white-space: nowrap;
 }
 
 .tabela-nutricional tbody tr:last-child td {
@@ -104,5 +114,5 @@ body, html {
 .tabela-nutricional tbody td:nth-child(13){
     margin-left: 10px;
 }
-/*FIM STYLE DA TABELA VERTICAL */
+/*FIM STYLE DA TABELA LINEAR*/
 /*##################################################################################*/
