@@ -4,6 +4,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+   
 }
 .containerListaItensTabela {
     max-width: 600px;
@@ -31,8 +32,11 @@ body, html {
 }
 
 .linha_dominio{
-    font-size:40px;
-    width: 100%;
+    font-size: 30px;
+    display: flex;
+    width: 30em;
+    background-color: black;
+    padding-top: 2px;
 }
 
 .content_porcoes{
@@ -124,6 +128,61 @@ body, html {
 
 .tabela-nutricional tbody td:nth-child(13){
     margin-left: 10px;
+}
+/* Media Queries */
+@media (max-width: 720px) {
+    body, html {
+        margin: 0;
+        height: 100%;
+        width: 110%;
+        display: flex;
+    }
+
+    .containerListaItensTabela {
+        width:auto;
+        font-size: 14px;
+    }
+
+    .content-rotulos {
+        padding: 20px;
+        width: 120%;
+        max-width: 500px;
+    }
+    .content_dominio {
+        display: contents;
+    }
+
+    .tabela-nutricional {
+        height: auto;
+        padding: 5px;
+    }
+
+    .tabela-nutricional h2 {
+        font-size: 20px;
+    }
+
+    .tabela-nutricional table th, 
+    .tabela-nutricional table td {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .percentual {
+        font-size: 10px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .linha_dominio {
+        font-size: 30px;
+        display: flex;
+        width: 418px;
+        background-color: black;
+        padding-top: 2px;
+    }
+    
 }
 /*FIM STYLE DA TABELA LINEAR*/
 /*##################################################################################*/
