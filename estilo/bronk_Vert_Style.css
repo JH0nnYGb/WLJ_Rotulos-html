@@ -14,53 +14,45 @@
         padding: 10px;
         border: 4px solid;
         width: 100%;
-        max-width: 54em;
+        max-width: 38em;
         margin-top: 12px;
-        display: flex;
+        
+        
        
+    }
+    .divs_table{
+       display: flex;
+       gap: 10px;
+      
     }
 
     .tabela-nutricional table {
-        width: 50%;
+       
         border-collapse: collapse;
-        margin: 0;
+        margin: 0; 
+        display: flex;
+     }
         
-        
-    } 
+    
 
     .tabela-nutricional tbody{    
         border-collapse: collapse;
     }
 
 
-    .tabela-nutricional .section1 {
-      
-        flex-direction: column;
-        padding-left: 5px;
-      
-    }
-    .tabela-nutricional .section2 {
-      
-        flex-direction: column;
-        padding-left: 5px;
-        margin-left: auto;
-    }
-    .percentual {
-        text-align: center;
-        font-size: 0.9em;
-     
-    }
+  .tabela2{}
+    
 
     .containerListaItensTabela {
-        max-width: 80em;
-        width: 100%; 
+        max-width: 60em;
+        width: 60em; 
         text-align: left; /* Alinha texto à esquerda */
         margin-top: -5px;
         font-size: small;
     }
 
     .content_dominio{
-        display:table-column;
+        max-width: 100%;
 
     }
 
@@ -73,8 +65,8 @@
     }
 
     .linha_dominio{
-        font-size:40px;
-        width: 100%;
+        font-size:38px;
+       
     }
 
     .content-rotulos {
@@ -132,6 +124,7 @@
         font-size: 14px;
         white-space:nowrap;
         font-weight:400;
+        
         
     }
 
