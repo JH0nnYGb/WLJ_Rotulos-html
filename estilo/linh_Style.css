@@ -183,6 +183,12 @@ body, html {
         padding-top: 2px;
     }
     
+
+/* Tablets em modo retrato (portrait) */
+@media screen and (min-width: 600px) and (max-width: 768px) {}
+
+/* Tablets em modo paisagem (landscape) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
 }
 /*FIM STYLE DA TABELA LINEAR*/
 /*##################################################################################*/
