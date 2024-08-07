@@ -53,8 +53,10 @@
         margin-top: 20px;
 
     }
-
-
+    .thead{
+        border-bottom: 3px solid
+    }
+ 
     .tabela-nutricional {
         background-color: #fff;
         padding: 10px;
@@ -83,11 +85,13 @@
     .tabela-nutricional table {
         width: 100%;
         border-collapse: collapse;
+        margin-left: 8px;
         
     } 
 
     .tabela-nutricional table th tr{
         border: 1px solid black;
+
 
     }
 
@@ -95,6 +99,7 @@
         text-align: right;
         padding: 10px;
         white-space: nowrap;
+        border-left: 2px solid black;   
 
     }
     .percentual {
@@ -129,6 +134,13 @@
         
     
     }
+    .tabela-nutricional table tr:first-child{
+        border-left: none;        
+        
+    }
+    .tabela-nutricional thead th:first-child {
+        border-left:none ;
+    }
 
     .tabela-nutricional tbody tr:last-child td {
         border-bottom: solid 2px black;
@@ -147,47 +159,6 @@
         border-right: none;
         
         
-    }
-
-
-
-    /* Media Queries */
-    @media (max-width: 720px) {
-        .containerListaItensTabela {
-            width:auto;
-            font-size: 14px;
-        }
-
-        .content-rotulos {
-            padding: 20px;
-        }
-
-        .tabela-nutricional {
-            height: auto;
-            padding: 5px;
-        }
-
-        .tabela-nutricional h2 {
-            font-size: 20px;
-        }
-
-        .tabela-nutricional table th, 
-        .tabela-nutricional table td {
-            font-size: 12px;
-            padding: 5px;
-        }
-
-        .percentual {
-            font-size: 10px;
-        }
-
-        .logo img {
-            width: 80px;
-        }
-
-        .linha_dominio {
-            font-size: 30px;
-        }
     }
 
     /*FIM STYLE DA TABELA HORRIZONTAL */

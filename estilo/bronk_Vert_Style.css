@@ -39,10 +39,6 @@
         border-collapse: collapse;
     }
 
-
-  .tabela2{}
-    
-
     .containerListaItensTabela {
         max-width: 60em;
         width: 60em; 
@@ -103,7 +99,10 @@
         margin: 5px 0;
         
     }
-
+    ul{
+       display: flex; 
+       margin-left: -30px;
+    }
   th{
     margin: 30px;
    }
@@ -174,44 +173,4 @@
 
     .tabela-nutricional tbody tr th:last-child {
         border-right: none;
-    }
-
-
-    /* Media Queries */
-    @media (max-width: 720px) {
-        .containerListaItensTabela {
-            width:auto;
-            font-size: 14px;
-        }
-
-        .content-rotulos {
-            padding: 20px;
-        }
-
-        .tabela-nutricional {
-            height: auto;
-            padding: 5px;
-        }
-
-        .tabela-nutricional h2 {
-            font-size: 20px;
-        }
-
-        .tabela-nutricional table th, 
-        .tabela-nutricional table td {
-            font-size: 12px;
-            padding: 5px;
-        }
-
-        .percentual {
-            font-size: 10px;
-        }
-
-        .logo img {
-            width: 80px;
-        }
-
-        .linha_dominio {
-            font-size: 30px;
-        }
     }

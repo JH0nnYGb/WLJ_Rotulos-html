@@ -72,6 +72,9 @@ body, html {
 
 .tabela-nutricional table {
     width: 100%;
+    border-collapse: collapse;
+    border-left:none ;
+    border-right: none;
 } 
 
 .tabela-nutricional table th tr{
@@ -82,24 +85,32 @@ body, html {
 .tabela-nutricional thead th {
     text-align: left;
     padding: 10px;
+    border-bottom: solid;
+    border-left: 1px solid;
 }
 
 .tabela-nutricional tbody{
-    border: 1px solid black;
+   
     border-collapse: collapse;
 }
 
 .tabela-nutricional tbody tr{
-    border:2px solid red;
+   /* border:2px solid red;*/
 }
-
+.tabela-nutricional thead :first-child{
+    border-left: none;
+}
 .tabela-nutricional tbody td {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
 }
 
 .tabela-nutricional tbody tr:last-child td {
     border-bottom: none;
+}
+.tabela-nutricional tbody td:last-child {
+    border-right: none;
 }
 
 .tabela-nutricional tbody td:nth-child(13){
